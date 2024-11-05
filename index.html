@@ -6,6 +6,54 @@
     <title>Weather Forecast</title>
     <!-- DataTables CSS for table styling -->
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh; /* 使页面高度充满视口 */
+            background-image: url('https://i.imgur.com/VfGOOdy.jpeg'); /* 替换为NCT Wish的图片URL */
+            background-size: cover; /* 使背景图像覆盖整个视口 */
+            background-position: center; /* 中心对齐背景图像 */
+        }
+        h1 {
+            text-align: center;
+            color: black; /* 黑色标题 */
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 1em;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+            background: rgba(255, 255, 255, 0); /* 表格背景透明 */
+        }
+        table thead tr {
+            background-color: #B2E0B2; /* 豆绿色标题行背景色 */
+            color: #ffffff;
+            text-align: left;
+        }
+        table th, table td {
+            padding: 12px 15px;
+            border: 1px solid #dddddd;
+        }
+        table tbody tr {
+            border-bottom: 1px solid #dddddd;
+        }
+        table tbody tr:nth-of-type(even) {
+            background-color: rgba(240, 248, 255, 0.7); /* 偶数行的背景色 */
+        }
+        table tbody tr:last-of-type {
+            border-bottom: 2px solid #009879;
+        }
+        table tbody tr:hover {
+            background-color: rgba(240, 248, 255, 0.9); /* 悬停效果为接近白色的背景色 */
+        }
+        /* 设置Location列的透明度为1（不透明） */
+        table tbody tr td:first-child {
+            opacity: 1; /* 将Location列透明度设为1（不透明） */
+        }
+    </style>
 </head>
 <body>
     <h1>2-Hour Weather Forecast</h1>
@@ -64,50 +112,4 @@
     </script>
 </body>
 </html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>美化的表格</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 25px 0;
-            font-size: 1em;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-        }
-        table thead tr {
-            background-color: #009879;
-            color: #ffffff;
-            text-align: left;
-        }
-        table th, table td {
-            padding: 12px 15px;
-            border: 1px solid #dddddd;
-        }
-        table tbody tr {
-            border-bottom: 1px solid #dddddd;
-        }
-        table tbody tr:nth-of-type(even) {
-            background-color: #f3f3f3;
-        }
-        table tbody tr:last-of-type {
-            border-bottom: 2px solid #009879;
-        }
-        table tbody tr:hover {
-            background-color: #f1f1f1;
-        }
-        h1 {
-            text-align: center;
-            color: #009879;
-        }
-    </style>
-</head>
-<body>
-    
+
