@@ -21,9 +21,10 @@
             color: black; /* 黑色标题 */
         }
         table {
-            width: 100%;
+            width: 80%; /* Set width to 80% for a narrower table */
+            max-width: 1400px; /* Optionally limit the maximum width */
+            margin: 25px auto; /* Center the table horizontally */
             border-collapse: collapse;
-            margin: 25px 0;
             font-size: 1em;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
             background: rgba(255, 255, 255, 0); /* 表格背景透明 */
@@ -52,6 +53,10 @@
         /* 设置Location列的透明度为1（不透明） */
         table tbody tr td:first-child {
             opacity: 1; /* 将Location列透明度设为1（不透明） */
+        }
+        /* DataTables-specific styling */
+    .dataTables_wrapper .dataTables_length, .dataTables_wrapper .dataTables_info {
+        margin-left: 15px; /* Adjust the position closer to the table */
         }
     </style>
 </head>
@@ -112,4 +117,5 @@
     </script>
 </body>
 </html>
+
 
